@@ -1,0 +1,17 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Build files
+Debug/
+Release/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+ipch/
+
+# Generated data
+students.txt
