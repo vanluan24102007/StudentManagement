@@ -1,0 +1,57 @@
+
+# Student Management System
+
+## 1. Project Overview
+
+Student Management System là chương trình quản lý thông tin sinh viên chạy trên giao diện Console.
+
+Chương trình cho phép Admin quản lý danh sách sinh viên thông qua các chức năng thêm, hiển thị, tìm kiếm, cập nhật, xóa, sắp xếp và thống kê.
+
+Dữ liệu được lưu vào file TXT để có thể sử dụng lại sau khi đóng chương trình.
+
+## 2. Actors
+
+- Admin: Người sử dụng và quản lý toàn bộ thông tin sinh viên.
+
+## 3. Functional Requirements
+
+- FR01 - Add Student: Thêm sinh viên mới.
+- FR02 - Display Students: Hiển thị danh sách sinh viên.
+- FR03 - Search Student: Tìm kiếm sinh viên theo mã hoặc tên.
+- FR04 - Update Student: Cập nhật thông tin sinh viên.
+- FR05 - Delete Student: Xóa sinh viên.
+- FR06 - Sort Students: Sắp xếp sinh viên theo điểm trung bình hoặc tên.
+- FR07 - Statistics: Thống kê số lượng sinh viên và điểm trung bình của danh sách.
+- FR08 - Save Data: Lưu danh sách sinh viên vào file TXT.
+- FR09 - Load Data: Đọc danh sách sinh viên từ file TXT.
+
+## 4. Data Requirements
+
+Mỗi sinh viên gồm các thông tin:
+
+| Field | Data Type | Description |
+|---|---|---|
+| studentId | string | Mã sinh viên |
+| fullName | string | Họ và tên |
+| age | int | Tuổi |
+| gender | string | Giới tính |
+| email | string | Địa chỉ email |
+| averageScore | double | Điểm trung bình (0–10) |
+
+## 5. Business Rules
+
+- BR01: Mã sinh viên không được để trống.
+- BR02: Mã sinh viên phải là duy nhất.
+- BR03: Họ tên không được để trống.
+- BR04: Tuổi phải lớn hơn 0.
+- BR05: Điểm trung bình phải nằm trong khoảng từ 0 đến 10.
+- BR06: Không thể cập nhật sinh viên không tồn tại.
+- BR07: Không thể xóa sinh viên không tồn tại.
+
+## 6. Non-functional Requirements
+
+- Usability: Menu Console dễ hiểu và dễ sử dụng.
+- Reliability: Kiểm tra dữ liệu đầu vào hợp lệ.
+- Maintainability: Chương trình được chia thành các class và file phù hợp.
+- Data Persistence: Dữ liệu được lưu và đọc lại từ file TXT.
+- Performance: Phù hợp với quy mô quản lý sinh viên của một ứng dụng console học tập.

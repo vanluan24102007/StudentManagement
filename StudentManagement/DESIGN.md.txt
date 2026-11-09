@@ -1,0 +1,91 @@
+
+# Student Management System - System Design
+
+## 1. Architecture Overview
+
+The application consists of three main classes:
+
+- Student
+- StudentManager
+- FileManager
+
+The main() function controls the application menu and user interaction.
+
+## 2. Class Student
+
+### Attributes
+
+| Name | Type | Access |
+|---|---|---|
+| studentId | string | private |
+| fullName | string | private |
+| age | int | private |
+| gender | string | private |
+| email | string | private |
+| averageScore | double | private |
+
+### Methods
+
+- Student(): Constructor
+- getStudentId()
+- getFullName()
+- getAge()
+- getGender()
+- getEmail()
+- getAverageScore()
+- setFullName()
+- setAge()
+- setGender()
+- setEmail()
+- setAverageScore()
+- displayInfo()
+
+## 3. Class StudentManager
+
+### Attributes
+
+| Name | Type | Access |
+|---|---|---|
+| students | vector<Student> | private |
+
+### Methods
+
+- addStudent()
+- displayStudents()
+- findStudentById()
+- searchStudentByName()
+- updateStudent()
+- deleteStudent()
+- sortByScore()
+- sortByName()
+- showStatistics()
+
+## 4. Class FileManager
+
+### Methods
+
+- saveToFile()
+- loadFromFile()
+
+### Responsibility
+
+Read and write student data using a TXT file.
+
+## 5. Class Relationships
+
+- StudentManager contains a collection of Student objects.
+- FileManager reads and writes student data.
+- main() coordinates user interaction and calls the appropriate classes.
+
+## 6. Project Structure
+
+StudentManagement/
+- StudentManagement.cpp
+- Student.h
+- Student.cpp
+- StudentManager.h
+- StudentManager.cpp
+- FileManager.h
+- FileManager.cpp
+- REQUIREMENTS.md
+- DESIGN.md
